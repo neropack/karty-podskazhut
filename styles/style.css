@@ -32,6 +32,18 @@ figure {
   margin: 0;
 }
 
+a:focus, button:focus {
+    outline: none;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 1px solid currentColor;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
 .heading {
     font-family: var(--accent-font, serif);
     font-weight: 600;
